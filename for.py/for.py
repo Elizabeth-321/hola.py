@@ -49,10 +49,21 @@
 #      else:
 #         print("Reprobaste")
 
+#________________________________________________________________________
+# 6-Pedir al usuario un numero y suma todos los digitos,desde el 1 hasta ese numero ,mostrando la suma 
 
+# cant=int(input("ingrese cantidad de numero"))
 
+# for i in range(cant):
+#     num=int(input("ingrese un numero"))
 
+#     if num % 2==0:
+#         print("el nunmero",num," es par")
+#     else:
+#         print("el numero",num, "es impar")
 
+#___________________________________________________________________________
+#7- Designar 2 votantes y pedir cantidad de votantes  ,pedir voto a cada votante y mostar resultados y verificar quien gano
 
-    
-    
+cant=int(input("Ingrese cantidad de votantes"))
+for i in range(cant):
