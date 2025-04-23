@@ -63,7 +63,84 @@
 #         print("el numero",num, "es impar")
 
 #___________________________________________________________________________
-#7- Designar 2 votantes y pedir cantidad de votantes  ,pedir voto a cada votante y mostar resultados y verificar quien gano
+#7- Designar 2 cantidatos y de votantes  ,pedir voto a cada votante y mostar resultados y verificar quien gano
 
-cant=int(input("Ingrese cantidad de votantes"))
-for i in range(cant):
+# c1="Inuy"                # se designa la cantidad de votantes en este caso 2 
+# c2="kago"
+# cv1=0
+# cv2=0
+
+# cant=int(input("Ingrese cantidad de votantes"))
+
+# for i in range(cant):
+#     print(f"por quien votara? 1-.{c1},2-.{c2}")
+#     voto=int(input())
+#     if voto==1:
+#        cv1=cv1+1
+#     else:
+#         cv2=cv2+1
+
+#     print(f"la cantidad e votos de {c1}es {cv1}")
+#     print(f"la cantidad e votos de {c2}es {cv2}")
+
+#     if cv1>cv2:
+#         print(f"gano {c1}")
+#     elif cv1<cv2:
+#         print(f"gano {c2}")
+#     else:
+#         print("Es un empate")
+#__________________________________________________________________________
+#8-  Vocales
+
+# frase=input("ingrese una frase")
+# c=0
+# cons=0
+# v=0
+# for i in frase:
+#     if i.lower() in "a e i o u":   # Lower es una funcion convierte los carcteres de una cadena a minunusculasa
+    
+#         v=v=1 
+#     else:
+#      cons=cons+1
+#      c=c=1
+# print("la cantidad de vocales ", v)
+# print("la cantidad de caracteres  es ", c)
+
+#______________________________________________________________________________
+# Otra manera de hacer el par e impar   
+
+# num=int(input("Ingrese cantidaad de numeros "))
+
+# for i in range(1,num+1)
+#     if (i) %2==0:
+#       print(f"el numero {i}es par")
+#     else:
+#       print(f" el numero{i} es impar")
+
+#_______________________________________________________________________________
+#Supermercado
+# cant=int(input("Cuantos productos llevara?"))
+# total=0
+# for i in range(cant):
+#     print('''
+#           que producto llevara?
+#           1- frac $600
+#           2- Bon o bon $400
+#           3-Ramitas $1000
+#           ''')
+#     op=int(input())
+#     if op==1:
+#         print("llevas frac")
+#         total=total+600
+
+#     elif op==2:
+#         print("llevas Bon o bon")
+#         total=total+400
+#     elif op==3:
+#          print("llevas ramitas")
+#          total=total+1000
+
+#     else:
+#         print("escoga una opcion valida")
+        
+        
