@@ -58,7 +58,7 @@
 #_________________________________________________________________
 #adivina el numero entre el 1 y 50 y ponere cantidad de intentos
 
-import random                              
+# import random                              
 
 # numran=random.randint(1,50)
 # print("adivine el numero entre 1 y 50")          #ARREFLAR!!
@@ -126,7 +126,7 @@ import random
 #         else: 
 #              print(f"ha ganado el {p2}")
 
-#_______________________________________________________
+#________________________________________________________
 # Crear un cajero automatico :
 # tener en cuenta cajas de billetes de 5000,10000 y 20000
 # cada caja tiene 30 billetes,verificar si el monto solicitado esta disponible en el cajero
@@ -134,4 +134,106 @@ import random
 # al termianr cada transaccion,debe mostrar saldo disponible
 # debe haber 3 usuarios cada uno con su saldo correspondiente,usar clave secreta para iniciar y segun la clave
 # asociar el saldo disponible 
+
+
+#_________________________________________________________
+
+# color=input("ingrese un color")
+# if color.lower()!="negro":
+#     print("el color no es el requerido")
+# else:
+#     print("este es el color requerido")
+
+#_________________________________________________________ practica con while.if
+
+# intentos=3
+# while intentos>0:   #<=3 menor o igual a 3
+#     intentos-=1
+#     color=input("ingrese un color")
+#     if color.lower()!="negro":
+#          print("el color no es el requerido")
+#     else:
+#          print("este es el color requerido")
+#          break
+
+#__________________________________________________________
+#La Florida 20%,/La Pintana 30%,/Puente Alto 25%,/San Joaquin 15%/ pregunta al usuario de que comuna es
+# Grupo familiar: 1=>2%,2 a 4=>3%,5 o mas=>4% cuantos son en el grupo familiar
+# calcular el arancel actual, es de 200.000 por semestre, y con la informacion dada calcular el descuento
+# ej:
+# ingrese su comuna: La Pintana
+#Ingrese su grupo familiar (numero entero)
+# el total del descuento es: 23%
+# el total a pagar es 
+
+# descuento=0
+# arancel=200000
+# print('''
+#     1.- la florida 
+#     2.- la pintana
+#     3.- San juaquin
+#     4.-Puente alto 
+
+#     ''')
+# comuna=int(input("ingrese su comuna"))
+
+# if comuna==1:
+#     descuento=20
+# elif comuna==2:
+#     descuento=30
+
+# elif comuna==3:
+#      descuento=25
+
+# elif comuna==4:
+#     descuento=15
+
+# else:
+#     print("respuesta invalida")
+
+# grupof=int(input)
+
+#_________________________________________________________________________________
+#clasificar segun categoria y precio
+#cat 1 +200,cat 2+400,cat 3 +600
+#Precios:1000 y menos,3%,entre 1001 y 5000;5%,5001 y mas 6%
+# Poner listado de 3 productos por categoria,las cat son 1.2 y 3
+#agregar los impuestos al precio,segun la cat y luego aplicar descuento al total de la boleta segun el monto
+
+# ej:
+# producto1,cat 2.1500+400
+# producto 2 cat 1, 8000+200
+# el total es 10100*-6%
+# el total a pagar es :9494
+
+print('''
+      sleccione una categoria
+     
+     1.-zapatillas
+     2.- poleras
+     3.-pelotas
+
+      ''')
+
+cat=int(input())
+if cat==1:
+    print('''
+    1.- zapatillas runing 2000
+    2.- zapatilla futbolito 1500
+    3.- zapatilla padel 20
+       ''')
+    
+    op=int(input())
+    if op==1:
+        total+=2000+200
+    elif op==2:
+        total+=1500+200
+    elif op==3:
+        total+=20+200
+
+    else:
+        print("opcin invalida")
+
+
+elif cat ==
 
