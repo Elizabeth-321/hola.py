@@ -328,5 +328,15 @@
 # agregar puntaje segun carrera
 # Tecnico: +60, ingenieria: +40, diplomado: +20
 
-asig=int(input("ingrese la cantidad de asignaturas"))
-if asig
+mat=int(input("ingrese la cantidad de manterias"))
+suma=0
+for i in range(mat) #obtendra la canctidad de materias que es mat
+    nota=float(input(f"ingresa la nota del ramo{i+1}"))
+    suma+=nota
+    prom=nota/mat
+
+if prom>=4.5 and prom<=5.0:
+    puntaje =300
+    print(f"su puntaje de nbeneficio es {puntaje }")
+
+elif prom>=5.1 and prom 6.0:
