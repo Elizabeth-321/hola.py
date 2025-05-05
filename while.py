@@ -206,34 +206,127 @@
 # el total es 10100*-6%
 # el total a pagar es :9494
 
-print('''
-      sleccione una categoria
+# total=0
+# print('''
+#     Selecione una categoria
+#       1.- Zpatillas
+#       2.- Poleras
+#       3.- Pelotas
+#       ''')
+# cat=int(input())
+
+# if cat==1:
+#     print('''
+#         1.- Zapatilla runing 2000
+#         2.- Zapatilla Futbolito 1500
+#         3.- Zapatilla Padel 20      
+#           ''')
+#     op=int(input())
+#     if op==1:
+#         total+=2000+200
+#     elif op==2:
+#         total+=1500+200
+#     elif op==3:
+#         total+=20+200
+#     else:
+#         print("Opcion invalida")
+# elif cat==2:
+#     print('''
+#         1.- Polera Runing 3000
+#         2.- Camiseta Futbolito 1500
+#         3.- Polera Padel 60      
+#           ''')
+#     op=int(input())
+#     if op==1:
+#         total+=3000+400
+#     elif op==2:
+#         total+=1500+400
+#     elif op==3:
+#         total+=60+400
+#     else:
+#         print("Opcion invalida")
+# elif cat==3:
+#     print('''
+#         1.- Pelota Voley 1000
+#         2.- Pelota Futbolito 2500
+#         3.- Pelota Rugby 3500     
+#           ''')
+#     op=int(input())
+#     if op==1:
+#         total+=1000+600
+#     elif op==2:
+#         total+=2500+600
+#     elif op==3:
+#         total+=3500+600
+#     else:
+#         print("Opcion invalida")
+# else:
+#     print("Opcion invalida")
+
+# if total<=1000:
+#     total= total*0.97
+# elif total<=1001 and total>=5000:
+#     total= total*0.95
+# elif total>=5001:
+#     total= total*0.94
+
+# print(" EL total es ", total)
+ #_________________________________________________________________________
+#calcular el puntaje de credito
+# Se debe calcular que tanto credito tiene una persona 
+# en cierta entidad financiera ,debera considerar cantidad de ingresos,nivel educacional y nacionalidad
+# cantidad de ingresos 
+# 500.000 a 1.000.000: 300.000
+# 1.000.000 a 1.500.000: 650.000
+# 1.500.001 o mas: 1.000.000
+# Nivel educacional :Basico:x1 ,medio x1.3,superior:x1.5
+# Nacionalidad : Chilena:+300.000, extranjero:+0
+
+
+# print('''
+#       Cantidad de ingresos
      
-     1.-zapatillas
-     2.- poleras
-     3.-pelotas
+#      1.-500.000 a 1.000.000:300.000
+#      2.-1.000.000 a 1500.000:650.000
+#      3.-1.500.000 o mas :1.000.000
 
-      ''')
+#       ''')
+# calcular_ingreso = nacionalidad, 
 
-cat=int(input())
-if cat==1:
-    print('''
-    1.- zapatillas runing 2000
-    2.- zapatilla futbolito 1500
-    3.- zapatilla padel 20
-       ''')
-    
-    op=int(input())
-    if op==1:
-        total+=2000+200
-    elif op==2:
-        total+=1500+200
-    elif op==3:
-        total+=20+200
-
-    else:
-        print("opcin invalida")
+# if cant==1:
+#     print("300.000")
+# elif cant==2:
+#     print("650.000")
+# elif cant==3:
+#         print("1.000.000")
+# else:
+#     print("opcion invalida")
 
 
-elif cat ==
 
+# pedir dia y mes de nacimiento y mostrar el signo zodiacal
+
+
+#Pida al usuario 2 digitos verificando que el segundo sea mayor
+#genere un numero aleatorio entre esos digitos
+# e imprima la cantidad de veces el simbolo (vuadrado) (alt+220)
+# import random
+# print("ingresa  2digitos")
+# n1=int(input("numero 1: "))
+# n2=int(input("numero 2 :"))
+
+# while n1>n2:
+#     print("El numero 2 no puede ser menor que el numero1")
+#     n1=int(input("numero 2:"))
+
+# num=random.randint(n1,n2) hacer lo mismo con for!
+
+#Crear un programa que pida la cantidad de ramos y luego
+# pida el promedio por cada materia basados en su promedio
+# final,aplicar puntaje de beneficios
+# 4.5 y 5: 300, 5.1 y 6.0:500,6.1 y 7.0:800
+# agregar puntaje segun carrera
+# Tecnico: +60, ingenieria: +40, diplomado: +20
+
+asig=int(input("ingrese la cantidad de asignaturas"))
+if asig
