@@ -47,5 +47,10 @@ match op: #estructura de control que permite comparar un valor con múltiples pa
           print("Division")
           division()
           break
+    
+
+
+    #realizar programa que incluya match y llame a otras 3 funciones estas funciones deben incluir
+    #if ,if else for y/0 while el programa debe ser recursivo
        
        
