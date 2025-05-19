@@ -116,7 +116,6 @@
 #       print(f"el numero {i}es par")
 #     else:
 #       print(f" el numero{i} es impar")
-
 #_______________________________________________________________________________
 #Supermercado
 # cant=int(input("Cuantos productos llevara?"))
@@ -141,6 +140,135 @@
 #          total=total+1000
 
 #     else:
-#         print("escoga una opcion valida")
-        
-        
+#         print("escoga una opcion valida")     
+#______________________________________________________________________________________
+#otros ejercicios de for
+#perros de caza
+#pida al usuario la cantidad de perros
+#muestre cual es la cuota minima de conejos
+#luego consulte cuantos conejos trajo
+#si el perro trajo la cantidad minima
+#cumplio la cuota,sino se queda sin filete
+#mostrar resumen de perro que cumplieron y los que no 
+
+# import random
+
+# cant=int(input("ingrese un numero de perros"))        
+# cuot=3
+# cumple=0
+
+# for i in range(cant):
+#     con=random.randint(0,5)
+#     print(f"el perro {i+1} trajo {con}")
+
+# if  con>=cuot:
+#     print("el perro gana filete")
+#     cumple+=1
+
+# else:
+#     print("no cumple con la cuota")
+
+# print(f"los perros que cumplieron con la cuota son :" ,{cumple} )
+# print(f"la cantidad de perros que no cumplen son.",{cant-cumple})
+
+
+#___________________________________________________________
+# PASAR EL RAMO                             #prueba uso de for,condicionantes,try ,except
+
+#Pregunta la cantidad de rojos en el curso
+#los talleres que hay en el semestre son 4
+# por cada taller asisitido obtiene 0.3 decimas 
+# Si el alumno  tiene mas de 1 punto obtiene la bendicion del profe,sino no se le puede ayudar
+# ingrese la nota final y sume las decimas acumuladas
+# muestre si aprueba o reprueba
+
+# talleres=4
+# asistido=0
+# decimas=0
+# rojos=float(input("ingrese la cantidad de rojos en el curso"))
+ 
+# for roj in range(rojos):
+#     for tall in range(tall):
+#         asis=int(input(f"asistio al taller number {tall+1}? 1.- si/ No"))  #se le va sumando uno
+#         if asis.lower()=="si":
+#             decimas+=0.3
+
+#             if decimas>=1:
+#                 print("tienen la bencion del prof")
+    
+#     else:
+#         print("nada mas que hacer")
+
+
+#     notafinal=float(input("ingrese su nota final"))
+#     notafinal+=decimas
+#     print("su nota final es", notafinal) #
+#     if notafinal>=4:
+#         print("el alumno aprobo")
+#     else:
+#         ("el alumno reprobo")
+#______________________________________________________________________________________________
+#LAVADO DE AUTO
+
+#Crear un menu para lavar autos
+
+
+# 1.-Cursar pago del lavado
+# 2.- ver ventas diarias
+# 3.- Salir
+
+#el lavado tiene 3 niveles:
+#1.- Full $15.000 2.- standard 10.000. 3.- Basico $7.000
+#al mostrar las ventas diarias,debe mostrar la cantidad de autos que han ingresado y el monto total
+#recaudado.Tambien debe mostrar el monto mas alta pagado
+ventatotal=0
+nivel=0
+opc=0
+print(''' Niveles de lavado 
+      
+    1- Basico $7000
+    2.-Standar $10.000
+    3.- Full $ 15.000    
+      ''')
+    
+cant=int(input("ingrese una opcion"))
+
+if cant==1:
+    nivel+=7000
+elif cant==2:
+    nivel+=10000
+elif cant==3:
+    nivel+=15000
+else:
+    print("ingrese una opcion valida")
+
+print(''' Ingrese la operacion que desea realizar 
+      
+      1.-Cursar pago del lavado
+      2.-Ver ventas diarias
+      3.-Salir
+      
+      ''')
+op=int(input("ingrese una opcion"))
+
+if op==1:
+    opc=1
+elif op==2:
+    opc=2
+elif op==3:
+    opc=3
+else:
+    print("")
+ #calculos
+ # 
+ventatotal=
+
+
+
+
+
+
+
+
+
+
