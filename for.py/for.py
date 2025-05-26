@@ -242,6 +242,7 @@
 #1.- Full $15.000 2.- standard 10.000. 3.- Basico $7.000
 #al mostrar las ventas diarias,debe mostrar la cantidad de autos que han ingresado y el monto total
 #recaudado.Tambien debe mostrar el monto mas alta pagado
+
 # ventatotal=0
 # nivel=0
 # opc=0
@@ -283,6 +284,149 @@
 #  #calculos
 #  # 
 # ventatotal=
+
+#_____________________________________________________________________________________
+
+# El programa debe tener un menú de opciones de donde se pueda realizar el pago
+# del cupo de la tarjeta de crédito, como también simular nuevas compras, y estas
+# una vez sumadas se resten al cupo disponible.
+# Las opciones disponibles deben estar construidas de la siguiente forma:
+
+# 1. Pago de Tarjeta de Crédito:
+# a. El usuario comienza con una deuda de $100.000
+# b. El usuario puede ingresar un monto para realizar un pago en la
+# tarjeta de crédito.
+# c. Se debe verificar que el monto ingresado sea mayor o igual a cero.
+# d. Se debe verificar que el monto a pagar no exceda el saldo actual de
+# la tarjeta.
+# e. Al pagar el sistema debe descontar de la deuda total
+# f. Si las verificaciones son exitosas, se realiza el pago y se actualiza el
+# saldo de la tarjeta.
+
+# 2. Simulación de Compras:
+# a. El usuario puede simular realizar un número ilimitado de compras.
+# b. Para cada compra, se solicita al usuario ingresar el monto de la
+# compra. El programa suma los montos de cada compra.
+# c. Se verifica que el monto de la compra sea mayor o igual a cero.
+# d. Se realiza la compra y se actualiza el saldo de la tarjeta para cada
+# iteración del bucle for.
+
+# 3. Salir:
+# a. Al seleccionar esta opción, el programa debe cerrarse o finalizar.
+# A considerar:
+# 1. Manejo de Errores:
+# a. Se utilizan bloques try y except para manejar posibles errores al
+# ingresar datos, validar valores no numéricos y errores inesperados.
+
+# pago=0
+# deuda=100000
+# print('''Seleccione una opcion
+      
+#       1.-Pago de tarjeta de credito
+#       2.-Simulacion de compra
+#       3.-Salir
+
+#       ''')
+# print(f"la deuda inicial es {deuda}")
+# op=int(input("que desea hacer?"))
+
+# # if op==1:
+# #     print("desea pagar")
+# # elif op==2:
+# #     print("simular una compra")
+# # elif op==3:
+# #     print("salir")
+
+# pago=int(input("cuanto desea pagar?"))
+# if pago>= 0 and pago<=deuda:
+#     deuda-=pago
+# print(f"el monto a pagar no debe exceder el saldo actual: {deuda}")
+# # la tarjeta.")
+
+# print("el saldo actual es ", deuda)
+
+# sim=int(input())
+
+#_____________________________________________________________________________________
+
+# ETAPAS:
+# Debe crear un menú de inicio de sesión, en el cual se debe mostrar los siguientes campos:
+# 1) iniciar sesión
+# 2) registrar usuario
+# 3) salir
+# Para lo cual usted deberá haber creado 3 variables de usuario y 3 variables de contraseña,
+# ambas con valor inicial vacío, ejemplo:
+# • usuario1= None
+# • usuario2=None
+# • usuario3=None
+# • contrasena1= None
+# • contrasena2=None
+# • contrasena3= None
+
+# Si se selecciona la opción 1 y no existen registros de usuarios, el sistema deberá indicar que
+# es necesario registrar un usuario antes, y volverá al menú principal, en el caso de que
+# ingrese el usuario y contraseña correctamente, entonces el sistema mostrará el siguiente
+# menú:
+# 1) Realizar llamada
+# 2) Enviar correo electrónico
+# 3) Cerrar sesión
+# 2
+# Donde la opción 1 debe solicitar un número de celular, éste deberá comenzar con 9 y su
+# tamaño es de 9 dígitos (ejemplo: 985447561).
+# La opción 2, solicita un correo electrónico, el cual debe tener por lo menos un carácter de
+# “@” (validar usando for y while) y lo guardará en una variable llamada “correo”.
+# También solicitará el mensaje a enviar y lo guardará en una variable llamada “mensaje”
+# Finalmente cerrar sesión, volverá al menú principal.
+# El sistema no acepta que se ingresen opciones distintas a 1, 2 y 3 en ambos menús, si ocurre
+# esto, entonces el sistema emite un error y vuelve a solicitar la opción.
+# Recuerde utilizar try Exception en caso de ser necesario.
+
+#variables de usuarios
+usuario1= None
+usuario2=None 
+usuario3=None
+#variables de contraseñas 
+contrasena1= None
+contrasena2=None
+contrasena3= None
+
+while True:
+   
+ op=int(input(''' ingrese una opcion :)
+              
+ 1. iniciar sesión
+ 2.-registrar usuario
+ 3.- salir
+'''))
+ 
+ match op:
+  
+  case 1:
+
+    if usuario1==None and usuario2==None and usuario3==None:
+      print("No hay registros")
+
+    print("Es necesario registrarse antes de continuar...")
+    user=int(input("ingrese un usuario"))
+    print("Debe indicar una contraseña con un minumo de 6 digitos ")
+    cont=int(input("ingrese una contraseña"))
+    #  print("su contraseña es correcta")
+
+    # elif cont != contrasena1:
+    #  print("contrseña incorrecta, intentelo nuevamente")
+
+    #  menú:
+#  1) Realizar llamada
+#  2) Enviar correo electrónico
+#  3) Cerrar sesión
+
+
+
+   
+   
+
+
+
 
 
 
