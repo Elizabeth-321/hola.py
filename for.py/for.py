@@ -153,23 +153,44 @@
 
 # import random
 
-# cant=int(input("ingrese un numero de perros"))        
-# cuot=3
-# cumple=0
 
-# for i in range(cant):
-#     con=random.randint(0,5)
-#     print(f"el perro {i+1} trajo {con}")
+        
+# cuotC=3
+# cumple =0
+# while True:
+#     try:
 
-# if  con>=cuot:
-#     print("el perro gana filete")
-#     cumple+=1
+#         cant=int(input("ingrese la cantidad de perritos"))
+#         for i in range (cant):
+#           cone=random.randint (0,4)
+#           print(f"el perrito {i+1} trajo {cone} conejito")
 
-# else:
-#     print("no cumple con la cuota")
+#           if cone>=cuotC:
+#              print("tienes filete perrito, buen chico c:")
+#              cumple+=1
+#           else:
+#              print("Se queda sin filete, perdon perrito :c")
 
-# print(f"los perros que cumplieron con la cuota son :" ,{cumple} )
-# print(f"la cantidad de perros que no cumplen son.",{cant-cumple})
+# #resumen de perro que cumplieron y los que no ///////////////////////
+
+# #los que cumplieron 
+#         print("los perritos que cumplieron la cuota son ", cumple)
+# #los que no cumplieron
+#         print(f"los perritos que no cumplieron la cuota :c  son {cant-cumple}")
+#         break 
+
+#     except:
+#        print("ingrese solo nuneros enteros")
+
+
+
+# try:
+#     #codigo a aejecutar
+#     print("Ejecuta algo")
+# except Exception:
+#     # mensaje de error
+#     print("Error")
+
 
 
 #___________________________________________________________
@@ -221,51 +242,47 @@
 #1.- Full $15.000 2.- standard 10.000. 3.- Basico $7.000
 #al mostrar las ventas diarias,debe mostrar la cantidad de autos que han ingresado y el monto total
 #recaudado.Tambien debe mostrar el monto mas alta pagado
-ventatotal=0
-nivel=0
-opc=0
-print(''' Niveles de lavado 
+# ventatotal=0
+# nivel=0
+# opc=0
+# print(''' Niveles de lavado 
       
-    1- Basico $7000
-    2.-Standar $10.000
-    3.- Full $ 15.000    
-      ''')
+#     1- Basico $7000
+#     2.-Standar $10.000
+#     3.- Full $ 15.000    
+#       ''')
     
-cant=int(input("ingrese una opcion"))
+# cant=int(input("ingrese una opcion"))
 
-if cant==1:
-    nivel+=7000
-elif cant==2:
-    nivel+=10000
-elif cant==3:
-    nivel+=15000
-else:
-    print("ingrese una opcion valida")
+# if cant==1:
+#     nivel+=7000
+# elif cant==2:
+#     nivel+=10000
+# elif cant==3:
+#     nivel+=15000
+# else:
+#     print("ingrese una opcion valida")
 
-print(''' Ingrese la operacion que desea realizar 
+# print(''' Ingrese la operacion que desea realizar 
       
-      1.-Cursar pago del lavado
-      2.-Ver ventas diarias
-      3.-Salir
+#       1.-Cursar pago del lavado
+#       2.-Ver ventas diarias
+#       3.-Salir
       
-      ''')
-op=int(input("ingrese una opcion"))
+#       ''')
+# op=int(input("ingrese una opcion"))
 
-if op==1:
-    opc=1
-elif op==2:
-    opc=2
-elif op==3:
-    opc=3
-else:
-    print("")
- #calculos
- # 
-ventatotal=
-
-
-
-
+# if op==1:
+#     opc=1
+# elif op==2:
+#     opc=2
+# elif op==3:
+#     opc=3
+# else:
+#     print("")
+#  #calculos
+#  # 
+# ventatotal=
 
 
 

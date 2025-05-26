@@ -282,25 +282,61 @@
 # Nivel educacional :Basico:x1 ,medio x1.3,superior:x1.5
 # Nacionalidad : Chilena:+300.000, extranjero:+0
 
-
-# print('''
-#       Cantidad de ingresos
-     
-#      1.-500.000 a 1.000.000:300.000
-#      2.-1.000.000 a 1500.000:650.000
-#      3.-1.500.000 o mas :1.000.000
+# credito = 0
+# print("ingrese su  rango de ingresos")
+# print('''cantidad de ingresos
+#       1- 500.000 a 1.000.000
+#       2.-1.000.000 a 1.500.000
+#       3.- 1.500.001 o mas 
 
 #       ''')
-# calcular_ingreso = nacionalidad, 
 
-# if cant==1:
-#     print("300.000")
-# elif cant==2:
-#     print("650.000")
-# elif cant==3:
-#         print("1.000.000")
+# op_ingresos= int(input())
+
+# if op_ingresos==1:
+#     credito+= 300000
+# elif op_ingresos==2:
+#     credito+= 650000
+# elif op_ingresos==3:
+#     credito+= 1000000
 # else:
-#     print("opcion invalida")
+#     print("ingrese una opcion")
+
+
+# print('''Nivel educacional
+#       1.- Basico
+#       2.- Medio
+#       3.- Superior
+
+#       ''')
+# print("ingrese su  nivel educativo")
+# op_educ=int(input())
+
+# if op_educ==1:
+#     credito*=1
+# elif op_educ==2:
+#     credito*=1.3
+# elif op_educ==3:
+#     credito*=1.5
+# else:
+#     print("escoja una opcion correcta")
+
+# print("ingrese cual es su nacionalidad")
+# print('''
+#     1.-Chilena
+#     2.- Extranjero
+#     3.- Otro
+      
+#       ''')
+
+# op_nacio=int(input())
+# if op_nacio == 1 :
+#     credito+= 300000
+# elif op_nacio==2:
+#     credito+= 0
+
+# print("su puntaje de credito final es", credito)
+
 
 
 
@@ -322,21 +358,44 @@
 # num=random.randint(n1,n2) hacer lo mismo con for!
 
 #Crear un programa que pida la cantidad de ramos y luego
-# pida el promedio por cada materia basados en su promedio
-# final,aplicar puntaje de beneficios
+# pida el promedio por cada materia 
+# basados en su promedio final,aplicar puntaje de beneficios
 # 4.5 y 5: 300, 5.1 y 6.0:500,6.1 y 7.0:800
 # agregar puntaje segun carrera
 # Tecnico: +60, ingenieria: +40, diplomado: +20
 
-mat=int(input("ingrese la cantidad de manterias"))
-suma=0
-for i in range(mat) #obtendra la canctidad de materias que es mat
-    nota=float(input(f"ingresa la nota del ramo{i+1}"))
-    suma+=nota
-    prom=nota/mat
+# mat=int(input("Ingrese la cant de materias: "))
+# suma=0
+# for i in range(mat):
+#    notaramo=float(input(f"Ingrese la nota del ramo{i+1}: "))
+#    suma+=notaramo
+# prom=suma/mat
+# print("Su nota final es ", round(prom,1))
+# if prom>=4.5 and prom<=5.0:
+#    puntaje=300
+#    print( f"Su puntaje de beneficios es de {puntaje}")
+# elif prom>=5.2 and prom<=6.0:
+#     puntaje=500
+#     print( f"Su puntaje de beneficios es de {puntaje}")
+# elif prom>=6.1 and prom<=7.0:
+#     puntaje=800
+#     print( f"Su puntaje de beneficios es de {puntaje}")
+# else:
+#    print(" Es tan porro que no tiene beneficios")
 
-if prom>=4.5 and prom<=5.0:
-    puntaje =300
-    print(f"su puntaje de nbeneficio es {puntaje }")
+# car=int(input('''
+#             Ingrese su tipo de grado
+#               1.- Tecnico
+#               2.- Ingenieria
+#               3.- Diplomado
+#               '''))
+# if car==1:
+#    puntaje+=60
+# elif car==2:
+#    puntaje+=40
+# elif car==3:
+#    puntaje+=20
+# else:
+#    print("no es nuemro valido")
 
-elif prom>=5.1 and prom 6.0:
+# print( " El puntaje de beneficios es ", puntaje)
