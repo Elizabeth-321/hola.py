@@ -635,3 +635,17 @@
 # 6 juguetes o más → 20% de descuento 
 # Calcular el total a pagar considerando los descuentos y mostrar un resumen.
 # También mostrar quién compró más juguetes (el mayor número registrado)
+
+import random
+
+principiante=0
+fanatico=0
+coleccionista=0
+while True:
+    cant=int("cuantos niños compraran juguetes?") 
+    for n in range(cant):
+        juguetes=random.randint(5,16)
+        print(f"el niño {n+1} comprara {juguetes} juguetes")
+        if juguetes
+
+
