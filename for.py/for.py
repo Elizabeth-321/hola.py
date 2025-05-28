@@ -203,33 +203,34 @@
 # ingrese la nota final y sume las decimas acumuladas
 # muestre si aprueba o reprueba
 
+
+
+# rojos=int(input("Diga la cant de rojos: "))
 # talleres=4
-# asistido=0
-# decimas=0
-# rojos=float(input("ingrese la cantidad de rojos en el curso"))
- 
-# for roj in range(rojos):
-#     for tall in range(tall):
-#         asis=int(input(f"asistio al taller number {tall+1}? 1.- si/ No"))  #se le va sumando uno
-#         if asis.lower()=="si":
-#             decimas+=0.3
+# tDecimas=0
 
-#             if decimas>=1:
-#                 print("tienen la bencion del prof")
-    
+# for r in range(rojos):
+#     for t in range(talleres):
+#         asist=input(f"Asistio al taller numero {t+1}? si/no: ")
+#         if asist.lower()=="si":
+#             tDecimas+=0.3
+#     if tDecimas>=1:
+#         print(" Tiene la bendicion del profe")
 #     else:
-#         print("nada mas que hacer")
-
-
-#     notafinal=float(input("ingrese su nota final"))
-#     notafinal+=decimas
-#     print("su nota final es", notafinal) #
-#     if notafinal>=4:
-#         print("el alumno aprobo")
+#         print("Nada mas que hacer ")
+#     nf=float(input("Ingrese su nota final"))
+#     nf+=tDecimas
+#     print(f"su nota final es {nf}")
+#     if nf>=4:
+#         print("El alumno aprobó")
 #     else:
-#         ("el alumno reprobo")
-#______________________________________________________________________________________________
-#LAVADO DE AUTO
+#         print("El alumno reprobó")
+
+
+
+
+# ______________________________________________________________________________________________
+# #LAVADO DE AUTO
 
 #Crear un menu para lavar autos
 
@@ -243,47 +244,103 @@
 #al mostrar las ventas diarias,debe mostrar la cantidad de autos que han ingresado y el monto total
 #recaudado.Tambien debe mostrar el monto mas alta pagado
 
-# ventatotal=0
-# nivel=0
-# opc=0
-# print(''' Niveles de lavado 
-      
-#     1- Basico $7000
-#     2.-Standar $10.000
-#     3.- Full $ 15.000    
-#       ''')
-    
-# cant=int(input("ingrese una opcion"))
 
-# if cant==1:
-#     nivel+=7000
-# elif cant==2:
-#     nivel+=10000
-# elif cant==3:
-#     nivel+=15000
-# else:
-#     print("ingrese una opcion valida")
+# basico=0
+# standard=0
+# full=0
+# canta=0
+# top=0
 
-# print(''' Ingrese la operacion que desea realizar 
-      
-#       1.-Cursar pago del lavado
-#       2.-Ver ventas diarias
-#       3.-Salir
-      
-#       ''')
-# op=int(input("ingrese una opcion"))
+# while True:
+#         op=int(input('''ingrese una opcion
+#          1.-Cursar pago del lavado
+#          2.-ver ventas diarias
+#          3.- Salir              
+#                      '''))
 
-# if op==1:
-#     opc=1
-# elif op==2:
-#     opc=2
-# elif op==3:
-#     opc=3
-# else:
-#     print("")
-#  #calculos
-#  # 
-# ventatotal=
+#         match op:
+#             case 1: 
+#                 while True:
+#                      try:
+#                         op=int(input('''ingrese una opcion de lavado
+#                         1.- Basico $7000
+#                         2.- standard $10000
+#                         3.- Full $15000
+#                         4.- volver al menu prinicipal
+                                                    
+#                                     '''))
+                    
+#                         match op:
+#                             case 1: 
+#                                 print("has seleccionado basico")
+#                                 basico+=7000
+#                                 canta+=1
+#                                 if 7000>top:
+#                                     top=7000
+
+#                             case 2:
+#                                 print("has seleccionado standard ")
+#                                 standard+=10000
+#                                 canta+=1
+#                                 if 10000>top:
+#                                     top=10000
+#                             case 3:
+#                                 print("has seleccionado full")
+#                                 full+=15000
+#                                 canta+=1  #para saber cantidad autos
+#                                 if 15000>top:
+#                                      top=15000
+#                             case 4:
+#                                     print("volviendo al menu principal...")
+#                                     break
+#                             case _:
+#                                     print("opcion invalida")
+#                      except Exception:
+#                           print("ingrese solo numeros enteros")
+
+
+#             case 2: 
+             
+#                         op=input("sleccione una opcion")
+#                          #resumen de ventas diarias
+#                         print("su total por lavado basico es :", basico)
+#                         print("su total por lavado standard es :", standard)
+#                         print("su total por lavado full es :", full)
+#                         print("la cantidad de autos atendidos es", canta)
+#                         print("el total recaudado entre todos los servicios es $ :", basico + standard + full )
+#                         print("el monto mas alto pagado es", top)
+#             case 3:
+#                   print("saliendo...")
+#                   break
+#             case _:
+#                   print("opcion oncorrecta")
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 #_____________________________________________________________________________________
 
@@ -318,34 +375,50 @@
 # a. Se utilizan bloques try y except para manejar posibles errores al
 # ingresar datos, validar valores no numéricos y errores inesperados.
 
-# pago=0
 # deuda=100000
-# print('''Seleccione una opcion
-      
-#       1.-Pago de tarjeta de credito
-#       2.-Simulacion de compra
-#       3.-Salir
 
-#       ''')
-# print(f"la deuda inicial es {deuda}")
-# op=int(input("que desea hacer?"))
+# while True:
+#     op=int(input('''
+# seleccione una opción
+#      1.- pago
+#      2.- compra            
+#      3.- salir            
+# '''))
+    
+#     match op:
+#         case 1:
+#             print(f"la deuda actual es {deuda}")
+#             while True:
+#                 try:
+#                     pago=int(input("ingrese el monto a pagar"))
+#                     break
+#                 except Exception:
+#                     print("solo se a admiten numeros enteros")
+#             if pago>0 and pago<=deuda:
+#                 deuda=deuda-pago
 
-# # if op==1:
-# #     print("desea pagar")
-# # elif op==2:
-# #     print("simular una compra")
-# # elif op==3:
-# #     print("salir")
+#             else:
+#                 print(f"el pago debe ser mayor a cero y no exceder {deuda}")        
 
-# pago=int(input("cuanto desea pagar?"))
-# if pago>= 0 and pago<=deuda:
-#     deuda-=pago
-# print(f"el monto a pagar no debe exceder el saldo actual: {deuda}")
-# # la tarjeta.")
+            
 
-# print("el saldo actual es ", deuda)
+#         case 2:
+#             print("comprando")
+#             monto=int(input("ingrese el monto de la compra: "))
+#             deuda+=monto
+#             print(f"la deuda actual es {deuda}")
 
-# sim=int(input())
+
+#         case 3:
+#             print ("saliendo...")
+#             break
+
+
+#         case _:
+#             print("opcion invalida")
+
+
+
 
 #_____________________________________________________________________________________
 
@@ -381,55 +454,184 @@
 # esto, entonces el sistema emite un error y vuelve a solicitar la opción.
 # Recuerde utilizar try Exception en caso de ser necesario.
 
-#variables de usuarios
-usuario1= None
-usuario2=None 
-usuario3=None
-#variables de contraseñas 
-contrasena1= None
-contrasena2=None
-contrasena3= None
+# #variables de usuarios
+# usuario1= None
+# usuario2=None 
+# usuario3=None
+# #variables de contraseñas 
+# contrasena1= None
+# contrasena2=None
+# contrasena3= None
 
-while True:
+# while True:
    
- op=int(input(''' ingrese una opcion :)
+#  op=int(input(''' ingrese una opcion :)
               
- 1. iniciar sesión
- 2.-registrar usuario
- 3.- salir
-'''))
+#  1. iniciar sesión
+#  2.-registrar usuario
+#  3.- salir
+# '''))
  
- match op:
+#  match op:
   
-  case 1:
+#   case 1:
 
-    if usuario1==None and usuario2==None and usuario3==None:
-      print("No hay registros")
+#     if usuario1==None and usuario2==None and usuario3==None:
+#       print("No hay registros")
 
-    print("Es necesario registrarse antes de continuar...")
-    user=int(input("ingrese un usuario"))
-    print("Debe indicar una contraseña con un minumo de 6 digitos ")
-    cont=int(input("ingrese una contraseña"))
+#     print("Es necesario registrarse antes de continuar...")
+#     user=int(input("ingrese un usuario"))
+#     print("Debe indicar una contraseña con un minumo de 6 digitos ")
+#     cont=int(input("ingrese una contraseña"))
     #  print("su contraseña es correcta")
 
-    # elif cont != contrasena1:
-    #  print("contrseña incorrecta, intentelo nuevamente")
+#_______________________________________________________________________
+# # Ejemplo de carrito con categorias  
+# total=0
+# cantArt=0    
 
-    #  menú:
-#  1) Realizar llamada
-#  2) Enviar correo electrónico
-#  3) Cerrar sesión
+# while True:
+#     try:
+#         opcion=int(input(''' Carrito de compras
+#                         Seleccione una opcion con un numero entero
+#                         1.- Comprar Frutas
+#                         2.- Comprar Verduras
+#                         3.- Pagar
+#                         4.- Salir
+#                             '''))
+#         match opcion:
+#             case 1:
+#                 while True:
+#                     try:
+#                         opcion=int(input('''
+#                                         Seleccione una opcion con un numero entero
+#                                         1.- Frutilla $1500
+#                                         2.- Pera $1200
+#                                         3.- Manzana $ 1300
+#                                         4.- Volver al menu principal
+#                                             '''))
+#                         match opcion:
+#                             case 1:
+#                                 print("Has seleccionado Frutilla")
+#                                 total+=1500
+#                                 cantArt+=1 #para al finalñ de la compra se epa la cantidad de articulos 
+#                             case 2:
+#                                 print("Has seleccionado Pera")
+#                                 total+=1200
+#                                 cantArt+=1
+#                             case 3:
+#                                 print("Has seleccionado Manzana")
+#                                 total+=1300
+#                                 cantArt+=1
+#                             case 4:
+#                                 print("Volviendo...")
+#                                 break
+#                             case _:
+#                                 print("Opcion invalida")
+#                     except Exception:
+#                         print("Solo puede ingresar numeros enteros")   
+#                     print(" TU total hasta ahora es ", total)
+#             case 2:
+#                 while True:
+#                     try:
+#                         opcion=int(input('''
+#                                         Seleccione una opcion con un numero entero
+#                                         1.- Papa $1500
+#                                         2.- Lechuga $1200
+#                                         3.- Cebolla $ 1300
+#                                         4.- Volver al menu principal
+#                                             '''))
+#                         match opcion:
+#                             case 1:
+#                                 print("Has seleccionado Papa")
+#                                 cant=int(input("Cuantas papas llevara?"))
+#                                 total+=cant*1500
+#                                 cantArt+=cant
+#                             case 2:
+#                                 print("Has seleccionado Lechuga")
+#                                 total+=1200
+#                                 cantArt+=1
+#                             case 3:
+#                                 print("Has seleccionado Cebolla")
+#                                 total+=1300
+#                                 cantArt+=1
+#                             case 4:
+#                                 print("Volviendo...")
+#                                 break
+#                             case _:
+#                                 print("Opcion invalida")
+#                     except Exception:
+#                         print("Solo puede ingresar numeros enteros")   
+#                     print(" TU total hasta ahora es ", total)
+#             case 3:
+#                 print("Has seleccionado pagar")
+#                 print(f"El total de articulos es {cantArt}")
+#                 print(f"El total a pagar es {total}")
+#                 print(f"El total a pagar mas IVA es {round(total*1.19)}")
+#             case 4:
+#                 print("Saliendo...")
+#                 break
+#             case _:
+#                 print("Opcion invalida")
+#     except Exception:
+#         print("Solo puede ingresar numeros enteros")  
+            
+#__________________________________________________________-
+# # ## Domingo de pascua ####
+# Preguntar la Cantidad de niños de niños que buscan huevitos de chocolates
+# Cuando se termine la busqueda , preguntar cantos huevos encontró cada uno
+# y clasificarlos de la siguiente forma
+# Menos de una docena : NOOB
+# Entre una docena a 24: Master
+# 25 huevos o mas :Legend
+# Mostrar resumen, y mostrar la mayor cantidad de huevitos encontrados por un solo niño                
 
+# import random    
+# while True:
+#     try:    
+#         cantn=int(input(" cuantos niños buscan huevos? "))
+#         #break
+#     #except Exception:               puede ir aca el except al igual que break o abajo 
+#        # print("solo numeros enteros")
+#         noob=0
+#         master=0
+#         legend=0
+#         top=0
 
+#         for n in range(cantn):  #se repite la cant de veces que el usuario decida(cuantos niños buscan huevos)
+#             huevos=random.randint(5,30) # incluye la cantiddad de huevos 24,25 o docena
+#             if huevos>top: #se verifica cant huevo ej: 6 es mayor a 0?  
+#               top=huevos
 
-   
-   
+#             print(f"el niño numero {n+1} encontro {huevos} huevos" )   #mostar numero
+#             if huevos<12:
+#                 noob+=1# s eusa 1 para aumentar en 1 (sirve para contar articulos,cantidad )
+                
+#             elif huevos>= 12  and huevos <=24:
+#                 master+=1
+#             else:
+#                 legend+=1
+#             #mostrar resumen
+#         print("la cantidad del grupo noob es ", noob)
+#         print("la cantidad del grupo master es", master)
+#         print("la cantidad de niños legend es", legend)
+#         print("el mayor numero de huevos encontrados es ", top)
+#         break
 
+#     except Exception:
+#         print("solo numeros enteros")
 
-
-
-
-
-
-
-
+# variacion del mismo ejercicio ____________________________________2.1
+# Compra de Juguetes en Pascua 🐰 🔹 
+# Preguntar la cantidad de niños que comprarán juguetes de Pascua.
+# Cada niño elige cuántos juguetes quiere comprar.
+# Dependiendo del número de juguetes, se aplican descuentos:
+# 1 a 2 juguetes → Sin descuento
+# 3 a 5 juguetes → 10% de descuento
+# y clasifficarlos de la siguiente manera:
+# 1 o 2 juguetes: principiante
+# 3 a 5 juguetes: coleccionista
+# 6 o mas juguetes: fanatico
+# 6 juguetes o más → 20% de descuento 
+# Calcular el total a pagar considerando los descuentos y mostrar un resumen.
+# También mostrar quién compró más juguetes (el mayor número registrado)
